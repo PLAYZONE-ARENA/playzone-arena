@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="PlayZone Arena — joue gratuitement à des mini-jeux originaux sur mobile et ordinateur.">
+<title>PlayZone Arena — Play. Compete. Repeat.</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brandmark">P</span><span>PLAYZONE <b>ARENA</b></span></a>
+  <nav><a href="#games" data-i18n="navGames">Jeux</a><a href="#about" data-i18n="navAbout">À propos</a><a href="#contact" data-i18n="navContact">Contact</a></nav>
+  <button id="langBtn" class="lang" aria-label="Change language">EN</button>
+</header>
+<main>
+<section class="hero">
+ <div class="hero-copy"><div class="eyebrow"><span class="pulse"></span><span data-i18n="eyebrow">L'ARCADE EN LIGNE</span></div>
+ <h1><span data-i18n="heroLine1">Joue. Défie.</span><br><em data-i18n="heroLine2">Recommence.</em></h1>
+ <p data-i18n="heroText">Des mini-jeux gratuits, rapides et amusants. Choisis ton défi et bats ton meilleur score.</p>
+ <a class="primary" href="#games" data-i18n="explore">Explorer les jeux <span>↘</span></a>
+ <div class="hero-stats"><div><b>03</b><small data-i18n="statGames">JEUX DISPONIBLES</small></div><div><b>100%</b><small data-i18n="statFree">GRATUIT</small></div><div><b>∞</b><small data-i18n="statFun">AMUSEMENT</small></div></div></div>
+ <div class="hero-art"><div class="orb orb1"></div><div class="orb orb2"></div><div class="game-tile tile-a"><span>✦</span><small>ARCADE</small></div><div class="game-tile tile-b"><span>⚡</span><small>CHALLENGE</small></div><div class="game-tile tile-c"><span>◈</span><small>PUZZLE</small></div><div class="hero-center">P<span>Z</span></div></div>
+</section>
+<div class="ad-slot" aria-label="Emplacement publicitaire"><span data-i18n="adLabel">ESPACE PUBLICITAIRE</span><small data-i18n="adNote">Les annonces pourront apparaître ici après approbation AdSense.</small></div>
+<section id="games" class="games-section">
+ <div class="section-head"><div><div class="eyebrow" data-i18n="choose">CHOISIS TON DÉFI</div><h2 data-i18n="popular">Jeux à découvrir<span>.</span></h2></div><div class="section-note" data-i18n="playHint">Aucun téléchargement nécessaire</div></div>
+ <div class="game-grid">
+  <article class="game-card"><div class="game-art snake-art"><span>〰</span><i>●</i></div><div class="game-info"><div><small>ARCADE · 1 PLAYER</small><h3>Neon Snake</h3><p data-i18n="snakeDesc">Grandis sans toucher les murs.</p></div><button class="play-btn" data-game="snake" data-i18n="play">Jouer <b>→</b></button></div></article>
+  <article class="game-card"><div class="game-art merge-art"><div class="blocks"><i>2</i><i>4</i><i>8</i><i>16</i></div></div><div class="game-info"><div><small>PUZZLE · LOGIC</small><h3>2048 Mini</h3><p data-i18n="mergeDesc">Fusionne les nombres pour atteindre 2048.</p></div><button class="play-btn" data-game="merge" data-i18n="play">Jouer <b>→</b></button></div></article>
+  <article class="game-card"><div class="game-art reflex-art"><div class="target">✦</div><span>3…2…1</span></div><div class="game-info"><div><small>REFLEX · SPEED</small><h3>Flash Reflex</h3><p data-i18n="reflexDesc">Teste ta vitesse de réaction.</p></div><button class="play-btn" data-game="reflex" data-i18n="play">Jouer <b>→</b></button></div></article>
+ </div>
+</section>
+<section class="ad-slot second-ad"><span data-i18n="adLabel">ESPACE PUBLICITAIRE</span><small data-i18n="adNote">Les annonces pourront apparaître ici après approbation AdSense.</small></section>
+<section id="about" class="about"><div class="eyebrow" data-i18n="aboutEyebrow">BIENVENUE DANS L'ARÈNE</div><h2 data-i18n="aboutTitle">Le jeu, simplement.<br><em>Partout avec toi.</em></h2><p data-i18n="aboutText">PlayZone Arena rassemble des mini-jeux accessibles directement depuis ton navigateur. Pas d'installation : lance un jeu et amuse-toi.</p></section>
+<section id="contact" class="contact"><div><div class="eyebrow" data-i18n="contactEyebrow">UNE QUESTION ?</div><h2 data-i18n="contactTitle">Parlons-en.</h2></div><p data-i18n="contactText">Pour toute question ou suggestion, écris-nous à l'adresse e-mail du propriétaire du site.</p><a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com ↗</a></section>
+</main>
+<footer><a class="brand" href="#"><span class="brandmark">P</span><span>PLAYZONE <b>ARENA</b></span></a><div class="footer-links"><a href="privacy.html" data-i18n="privacy">Confidentialité</a><a href="about.html" data-i18n="about">À propos</a><a href="contact.html" data-i18n="contact">Contact</a></div><small>© <span id="year"></span> PlayZone Arena. <span data-i18n="rights">Tous droits réservés.</span></small></footer>
+<div id="modal" class="modal" aria-hidden="true"><div class="modal-panel"><div class="modal-head"><div><small id="gameCategory">ARCADE</small><h2 id="gameTitle">Game</h2></div><button id="closeModal" class="close" aria-label="Close">×</button></div><div id="gameArea" class="game-area"></div><p class="controls-hint" id="gameHint"></p></div></div>
+<script src="games.js"></script><script src="script.js"></script>
+</body></html>
